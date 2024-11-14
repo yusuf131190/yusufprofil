@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alamat Yusuf</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Background untuk seluruh halaman */
+        body {
+            background-image: url('ucup103.jpg'); /* Ganti dengan nama file gambar latar Anda */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .container {
+            margin-top: 50px;
+            text-align: center;
+            background-color: rgba(188, 206, 221, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .address-image-container {
+            background-color: #e6c177;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .address-image, .map-container iframe {
+            width: 100%;
+            max-width: 1000px;
+            height: 500px;
+            border-radius: 8px;
+        }
+        .btn-container {
+            margin-top: 20px;
+        }
+        .btn {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Fixed navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Alamat</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Menambahkan link ke halaman utama -->
+                        <a class="nav-link text-white" href="Untitled-1.html">Home</a>
+                    </li>
+                </ul>
+                <form class="d-flex" onsubmit="return searchPDF(event)">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Search PDF" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Alamat M Yusuf</h2>
+        <p>Jl. Tanjung Barat Selatan, Jagakarsa, Tanjung Barat</p>
+
+        <!-- Wrapper for Map and Image -->
+        <div class="content-wrapper">
+            <div class="address-image-container">
+                <img src="ssalamatgoogle.jpg" alt="Gambar Alamat" class="address-image">
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!4v1731554190915!6m8!1m7!1s802xDI6msmaW1JyObIQ_Mw!2m2!1d-6.314709637274182!2d106.8426639846503!3f41.21005021010981!4f-1.392258140156386!5f0.7820865974627469" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Tombol untuk Profil dan Kembali ke Halaman Utama -->
+            <div class="btn-container">
+                <a href="profile.html" class="btn btn-primary">Ke Halaman Profil</a>
+                <a href="Untitled-1.html" class="btn btn-secondary">Kembali ke Halaman Utama</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
